@@ -175,7 +175,7 @@ class LampFactory(AssetFactory):
             apply=True,
         )
 
-        if np.random.uniform() < 0.6:
+        if np.random.uniform() < 1.1:  # always add a bulb
             bulb = self.bulb_fac(i)
             butil.parent_to(bulb, obj, no_inverse=True, no_transform=True)
             bulb.location.z = obj.bound_box[-2][2] - self.params["ShadeHeight"] * 0.5
@@ -186,10 +186,11 @@ class LampFactory(AssetFactory):
         return obj
 
     def finalize_assets(self, assets):
-        if self.scratch:
-            self.scratch.apply(assets)
-        if self.edge_wear:
-            self.edge_wear.apply(assets)
+        # if self.scratch:
+        #     self.scratch.apply(assets)
+        # if self.edge_wear:
+        #     self.edge_wear.apply(assets)
+        pass
 
 
 class DeskLampFactory(LampFactory):

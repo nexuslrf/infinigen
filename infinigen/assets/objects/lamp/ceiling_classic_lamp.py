@@ -410,11 +410,11 @@ class CeilingClassicLampFactory(AssetFactory):
         super(CeilingClassicLampFactory, self).__init__(factory_seed)
         with FixedSeed(factory_seed):
             self.params = {
-                "cable_length": uniform(0.6, 0.710),
+                "cable_length": uniform(0.25, 0.36),
                 "cable_radius": uniform(0.015, 0.02),
-                "height": uniform(0.4, 0.710),
-                "top_radius": uniform(0.05, 0.2),
-                "bottom_radius": uniform(0.22, 0.35),
+                "height": uniform(0.2, 0.36),
+                "top_radius": uniform(0.05, 0.15),
+                "bottom_radius": uniform(0.18, 0.25),
                 "Thickness": uniform(0.002, 0.006),
                 "Amount": randint(1, 8),
             }

@@ -1,0 +1,5 @@
+infinigen.assets.objects.lamp.CeilingLightFactory
+infinigen.assets.objects.lamp.LampFactory
+infinigen.assets.objects.lamp.DeskLampFactory
+infinigen.assets.objects.lamp.FloorLampFactory
+infinigen.assets.objects.lamp.ceiling_classic_lamp.CeilingClassicLampFactory
